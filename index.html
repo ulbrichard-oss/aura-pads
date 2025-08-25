@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AURA – Underarm Pads | Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand: #111827; --accent:#ef4444; }
+    html, body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .card { border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,.06); }
+    .glass { backdrop-filter: saturate(180%) blur(14px); background: rgba(255,255,255,.65); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-30 bg-white/90 glass border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center gap-4">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-full bg-rose-100 flex items-center justify-center font-bold text-rose-600">A</div>
+        <div>
+          <h1 class="text-xl font-extrabold tracking-tight">AURA</h1>
+          <p class="text-xs text-gray-500 -mt-1">Underarm sweat protection</p>
+        </div>
+      </div>
+      <div class="ms-auto flex items-center gap-3">
+        <button id="openCart" class="px-4 py-2 rounded-2xl bg-black text-white text-sm font-semibold hover:bg-gray-800">Cart <span id="cartCount" class="ms-1">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Stay confident. Protect your clothes with <span class="text-rose-600">AURA</span>.</h2>
+        <p class="mt-4 text-gray-600">Discreet, skin‑friendly underarm body pads that absorb sweat and prevent stains. Peel, stick, and feel safe for hours.</p>
+        <ul class="mt-6 space-y-2 text-gray-700">
+          <li>• Dermatologically gentle • EU-made • Single‑use for hygiene</li>
+          <li>• Free shipping over €20 • Cash on delivery via email order</li>
+        </ul>
+        <a href="#shop" class="inline-block mt-6 px-5 py-3 rounded-2xl bg-rose-600 text-white font-semibold hover:bg-rose-500">Shop now</a>
+      </div>
+      <div class="card bg-white p-6">
+        <div class="aspect-square rounded-xl bg-rose-50 flex items-center justify-center">
+          <div class="text-center p-6">
+            <div class="text-rose-600 font-bold">Illustration</div>
+            <div class="text-sm text-gray-500">Place product photo here</div>
+          </div>
+        </div>
+        <p class="text-center text-sm text-gray-500 mt-3">AURA underarm pads – anti‑sweat protection</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="shop" class="max-w-6xl mx-auto px-4 py-10">
+    <h3 class="text-2xl md:text-3xl font-extrabold">Choose your pack</h3>
+    <div class="grid md:grid-cols-3 gap-6 mt-6">
+      <!-- Product cards -->
+      <div class="card bg-white p-6 flex flex-col" data-sku="AURA-2" data-name="AURA 2‑pack" data-price="0.99">
+        <h4 class="text-lg font-bold">AURA 2‑pack</h4>
+        <p class="text-sm text-gray-500">Trial pack (2 pcs)</p>
+        <div class="mt-4 text-3xl font-extrabold">€0.99</div>
+        <div class="mt-3 flex items-center gap-2">
+          <label class="text-sm">Qty</label>
+          <input type="number" min="1" value="1" class="qty w-16 border rounded-lg px-2 py-1"/>
+        </div>
+        <button class="mt-4 addToCart px-4 py-2 rounded-2xl bg-black text-white font-semibold hover:bg-gray-800">Add to cart</button>
+      </div>
+      <div class="card bg-white p-6 flex flex-col" data-sku="AURA-10" data-name="AURA 10‑pack" data-price="4.90">
+        <div class="inline-flex items-center gap-2">
+          <h4 class="text-lg font-bold">AURA 10‑pack</h4>
+          <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">Best value</span>
+        </div>
+        <p class="text-sm text-gray-500">10 pcs</p>
+        <div class="mt-4 text-3xl font-extrabold">€4.90</div>
+        <div class="mt-3 flex items-center gap-2">
+          <label class="text-sm">Qty</label>
+          <input type="number" min="1" value="1" class="qty w-16 border rounded-lg px-2 py-1"/>
+        </div>
+        <button class="mt-4 addToCart px-4 py-2 rounded-2xl bg-black text-white font-semibold hover:bg-gray-800">Add to cart</button>
+      </div>
+      <div class="card bg-white p-6 flex flex-col" data-sku="AURA-30" data-name="AURA 30‑pack" data-price="12.90">
+        <h4 class="text-lg font-bold">AURA 30‑pack</h4>
+        <p class="text-sm text-gray-500">Family pack (30 pcs)</p>
+        <div class="mt-4 text-3xl font-extrabold">€12.90</div>
+        <div class="mt-3 flex items-center gap-2">
+          <label class="text-sm">Qty</label>
+          <input type="number" min="1" value="1" class="qty w-16 border rounded-lg px-2 py-1"/>
+        </div>
+        <button class="mt-4 addToCart px-4 py-2 rounded-2xl bg-black text-white font-semibold hover:bg-gray-800">Add to cart</button>
+      </div>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="card bg-white p-6">
+        <h5 class="font-bold">How it works</h5>
+        <p class="text-sm text-gray-600 mt-2">Peel the liner, stick the pad onto clean, dry underarm skin. Replace after use. Recommended up to 4 hours per pad.</p>
+      </div>
+      <div class="card bg-white p-6">
+        <h5 class="font-bold">Shipping</h5>
+        <p class="text-sm text-gray-600 mt-2">Flat €2.90 in EU. <span class="font-semibold">Free</span> over €20. Local pickup available on request.</p>
+      </div>
+      <div class="card bg-white p-6">
+        <h5 class="font-bold">Safe for skin</h5>
+        <p class="text-sm text-gray-600 mt-2">Hygienic, non‑reusable. Made in EU. Apply to clean, dry, shaved underarm.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <div id="cartDrawer" class="fixed inset-0 z-40 hidden">
+    <div class="absolute inset-0 bg-black/40" id="overlay"></div>
+    <aside class="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-xl p-6 flex flex-col">
+      <div class="flex items-center justify-between">
+        <h4 class="text-xl font-extrabold">Your cart</h4>
+        <button id="closeCart" class="p-2 rounded-full hover:bg-gray-100">✕</button>
+      </div>
+      <div id="cartItems" class="mt-4 grow overflow-auto divide-y"></div>
+      <div class="pt-4 space-y-2">
+        <div class="flex justify-between text-sm"><span>Subtotal</span><span id="subtotal">€0.00</span></div>
+        <div class="flex justify-between text-sm"><span>Shipping</span><span id="shipping">€0.00</span></div>
+        <div class="flex justify-between text-lg font-bold"><span>Total</span><span id="total">€0.00</span></div>
+        <div class="text-xs text-gray-500">Free shipping over €20. Shipping is €2.90 otherwise.</div>
+        <div class="grid gap-2 mt-3">
+          <button id="checkoutEmail" class="px-4 py-3 rounded-xl bg-rose-600 text-white font-semibold hover:bg-rose-500">Order via Email (Cash on Delivery)</button>
+          <button id="checkoutPayPal" class="px-4 py-3 rounded-xl bg-black text-white font-semibold hover:bg-gray-800">Pay with PayPal</button>
+          <a id="checkoutStripe" href="#" target="_blank" class="px-4 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-500 text-center">Stripe Payment Link</a>
+          <p class="text-xs text-gray-500">You can enable any checkout method you prefer. Edit links in the code.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Email order modal -->
+  <div id="emailModal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/40" data-close></div>
+    <div class="card bg-white w-full max-w-lg mx-auto mt-20 p-6 relative">
+      <button class="absolute top-3 right-3 p-2 rounded-full hover:bg-gray-100" data-close>✕</button>
+      <h4 class="text-xl font-extrabold">Enter delivery details</h4>
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <input id="c_name" placeholder="Full name" class="border rounded-lg px-3 py-2"/>
+        <input id="c_email" placeholder="Email" class="border rounded-lg px-3 py-2"/>
+        <input id="c_phone" placeholder="Phone" class="border rounded-lg px-3 py-2"/>
+        <input id="c_city" placeholder="City" class="border rounded-lg px-3 py-2"/>
+        <input id="c_street" placeholder="Street & No." class="border rounded-lg px-3 py-2 md:col-span-2"/>
+        <input id="c_zip" placeholder="ZIP / Postcode" class="border rounded-lg px-3 py-2 md:col-span-2"/>
+      </div>
+      <button id="sendEmailOrder" class="mt-5 w-full px-4 py-3 rounded-xl bg-rose-600 text-white font-semibold hover:bg-rose-500">Send order email</button>
+      <p class="text-xs text-gray-500 mt-3">This opens your email client with a pre‑filled order. We confirm by reply.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-16 py-10 border-t bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-sm">
+      <div>
+        <div class="font-bold">AURA</div>
+        <p class="text-gray-600">Underarm body pads – anti‑sweat protection. Made in EU.</p>
+      </div>
+      <div>
+        <div class="font-bold">Contact</div>
+        <p class="text-gray-600">ESA Consulting s.r.o.<br>hello@aurapads.com (edit in code)</p>
+      </div>
+      <div>
+        <div class="font-bold">Legal</div>
+        <p class="text-gray-600">Single‑use. Apply to clean, dry skin. Do not reuse. Recommended use up to 4 hours.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ===== CONFIG – edit these for your store =====
+    const SHIPPING_FLAT = 2.90; // €
+    const FREE_SHIPPING_THRESHOLD = 20; // €
+    const PAYPAL_USERNAME = "yourPayPalMe"; // change to your PayPal.me username
+    const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/test_XXXX"; // optional Stripe Payment Link
+    const ORDER_EMAIL = "hello@aurapads.com"; // destination email for cash-on-delivery orders
+
+    // ===== CART LOGIC =====
+    const cart = JSON.parse(localStorage.getItem('aura_cart') || '[]');
+    const cartCount = () => cart.reduce((a, i) => a + i.qty, 0);
+
+    const format = (n) => `€${n.toFixed(2)}`;
+
+    function saveCart() { localStorage.setItem('aura_cart', JSON.stringify(cart)); updateCartCount(); }
+    function updateCartCount(){ document.getElementById('cartCount').textContent = cartCount(); }
+
+    function addItem(sku, name, price, qty){
+      const existing = cart.find(i => i.sku === sku);
+      if (existing) existing.qty += qty; else cart.push({ sku, name, price, qty });
+      saveCart();
+    }
+
+    function removeItem(sku){ const idx = cart.findIndex(i => i.sku === sku); if (idx>-1){ cart.splice(idx,1); saveCart(); renderCart(); } }
+
+    function totals(){
+      const subtotal = cart.reduce((a,i)=> a + i.price * i.qty, 0);
+      const shipping = subtotal >= FREE_SHIPPING_THRESHOLD || subtotal === 0 ? 0 : SHIPPING_FLAT;
+      const total = subtotal + shipping;
+      return { subtotal, shipping, total };
+    }
+
+    function renderCart(){
+      const list = document.getElementById('cartItems');
+      list.innerHTML = '';
+      cart.forEach(item => {
+        const row = document.createElement('div');
+        row.className = 'py-3 flex items-center justify-between';
+        row.innerHTML = `<div><div class='font-semibold'>${item.name}</div><div class='text-sm text-gray-500'>€${item.price.toFixed(2)} × ${item.qty}</div></div>
+                         <button class='text-sm text-rose-600 hover:underline' data-remove='${item.sku}'>Remove</button>`;
+        list.appendChild(row);
+      });
+      const t = totals();
+      document.getElementById('subtotal').textContent = format(t.subtotal);
+      document.getElementById('shipping').textContent = format(t.shipping);
+      document.getElementById('total').textContent = format(t.total);
+      
+      // Update PayPal and Stripe links
+      const paypal = document.getElementById('checkoutPayPal');
+      paypal.onclick = () => {
+        const amount = totals().total.toFixed(2);
+        if (amount <= 0) return alert('Your cart is empty.');
+        window.open(`https://www.paypal.me/${PAYPAL_USERNAME}/${amount}`,'_blank');
+      };
+      document.getElementById('checkoutStripe').href = STRIPE_PAYMENT_LINK;
+    }
+
+    // Add to cart buttons
+    document.querySelectorAll('.addToCart').forEach(btn => {
+      btn.addEventListener('click', (e)=>{
+        const card = e.target.closest('[data-sku]');
+        const sku = card.dataset.sku;
+        const name = card.dataset.name;
+        const price = parseFloat(card.dataset.price);
+        const qty = parseInt(card.querySelector('.qty').value || '1');
+        addItem(sku, name, price, qty);
+        // Toast
+        e.target.textContent = 'Added ✓';
+        setTimeout(()=> e.target.textContent = 'Add to cart', 1200);
+      });
+    });
+
+    // Cart drawer controls
+    const drawer = document.getElementById('cartDrawer');
+    document.getElementById('openCart').onclick = ()=>{ drawer.classList.remove('hidden'); renderCart(); };
+    document.getElementById('closeCart').onclick = ()=> drawer.classList.add('hidden');
+    document.getElementById('overlay').onclick = ()=> drawer.classList.add('hidden');
+
+    // Email checkout
+    document.getElementById('checkoutEmail').onclick = ()=>{
+      if (cart.length === 0) return alert('Your cart is empty.');
+      document.getElementById('emailModal').classList.remove('hidden');
+    };
+    document.querySelectorAll('#emailModal [data-close]').forEach(el=> el.onclick = ()=> document.getElementById('emailModal').classList.add('hidden'));
+
+    document.getElementById('sendEmailOrder').onclick = ()=>{
+      const details = {
+        name: document.getElementById('c_name').value.trim(),
+        email: document.getElementById('c_email').value.trim(),
+        phone: document.getElementById('c_phone').value.trim(),
+        city: document.getElementById('c_city').value.trim(),
+        street: document.getElementById('c_street').value.trim(),
+        zip: document.getElementById('c_zip').value.trim(),
+      };
+      if (!details.name || !details.email || !details.city || !details.street || !details.zip){
+        return alert('Please fill in name, email and address.');
+      }
+      const t = totals();
+      const items = cart.map(i=> `${i.name} – €${i.price.toFixed(2)} x ${i.qty}`).join('%0D%0A');
+      const address = `${details.street}, ${details.zip} ${details.city}`;
+      const subject = encodeURIComponent(`AURA Order – ${details.name}`);
+      const body = `Hello,\n\nI would like to order AURA pads.\n\nItems:\n${decodeURIComponent(items)}\n\nSubtotal: €${t.subtotal.toFixed(2)}\nShipping: €${t.shipping.toFixed(2)}\nTotal: €${t.total.toFixed(2)}\n\nDelivery details:\nName: ${details.name}\nEmail: ${details.email}\nPhone: ${details.phone}\nAddress: ${address}\n\nPayment: Cash on delivery / Bank transfer (confirm).\n\nThank you!`;
+      window.location.href = `mailto:${ORDER_EMAIL}?subject=${subject}&body=${encodeURIComponent(body)}`;
+    };
+
+    // Init
+    updateCartCount();
+  </script>
+</body>
+</html>
